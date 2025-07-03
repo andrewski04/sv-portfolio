@@ -1,11 +1,12 @@
 <script lang="ts">
+	export const prerender = false;
 	import '../app.css';
-	import NavBar from '../lib/components/NavBar.svelte';
+	import NavBar from '../lib/components/navigation/NavBar.svelte';
 
 	let { children } = $props();
 </script>
 
-<div class="min-h-screen bg-neutral-400 px-8 pt-4">
+<div class="min-h-screen bg-neutral-100 dark:bg-black">
 	<NavBar />
 	{@render children()}
 </div>
