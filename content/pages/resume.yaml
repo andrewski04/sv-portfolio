@@ -1,0 +1,26 @@
+title: Resume
+
+sections:
+  - title: Enterprise IT Intern
+    subtitle: BlueCross BlueShield TN, January 2025 - Current
+    list:
+      - title: Skills & Achievements
+        description:
+          - Working in rotations with three teams across Infrastructure and Operations and Enterprise Technology Solutions
+          - Developing skills working with a team while using Scrum and Agile methodologies
+          - Gaining experience with new enterprise software, such as IBM Sterling, used to handle secure file transfers.
+  - title: Student at BlueSky TN Institute / ETSU
+    subtitle: ETSU, August 2023 - December 2025
+    list:
+      - title: Coursework
+        description:
+          - On path to earn a Bachelor's in Computing with a current GPA of 3.9
+          - Relevant coursework includes Intro to Comp. Science I & II, PC Maintenance, Math for CS, Database Fundamentals, Web Development, Network Security, Info Security & Assurance, Enterprise Programming, Software Engineer I
+  - title: Student at Volkswagen Mechatronics Academy
+    subtitle: Chattanooga State / Ooltewah High School, August 2019 - December 2022
+    list:
+      - title: Coursework
+        description:
+          - Dual enrollment with courses in Mechatronics Technology.
+          - Graduated with a 3.6 GPA and a 29 on the ACT.
+          - Relevant course work includes Computer Science Principles, Programming & Logic, Microsoft for Engineers, Math for Engineers

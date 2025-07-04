@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
-
+	import nProgress from 'nprogress';
 	let menuOpen = $state(false);
 	let darkMode = $state(false);
 
@@ -10,7 +10,8 @@
 		{ name: 'Resume', route: '/resume' },
 		{ name: 'Projects', route: '/projects' },
 		{ name: 'My Vision', route: '/vision' },
-		{ name: 'Goals', route: '/goals' }
+		{ name: 'Goals', route: '/goals' },
+		{ name: 'Blog', route: '/blog' }
 	];
 
 	if (browser) {
@@ -25,6 +26,7 @@
 	}
 
 	function handleSwitchDarkMode() {
+		nProgress.start();
 		darkMode = !darkMode;
 
 		localStorage.setItem('theme', darkMode ? 'dark' : 'light');
@@ -34,6 +36,7 @@
 		} else {
 			document.documentElement.classList.remove('dark');
 		}
+		nProgress.done();
 	}
 
 	function toggleMenu() {
@@ -43,17 +46,15 @@
 
 <svelte:head>
 	<script>
-		const storedTheme = localStorage.getItem('theme');
-
-		if (storedTheme === 'dark') {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
+		localStorage.getItem('theme') === 'dark'
+			? document.documentElement.classList.add('dark')
+			: document.documentElement.classList.remove('dark');
 	</script>
 </svelte:head>
 
-<nav class="bg-white p-6 font-mono shadow-md dark:bg-black dark:text-white">
+<nav
+	class="bg-white p-6 font-mono shadow-md transition-colors duration-300 dark:bg-black dark:text-white"
+>
 	<!-- Mobile Header (Title + Menu Button + Dark Mode Toggle) -->
 	<div class="flex items-center justify-between md:hidden">
 		<div class="font-mono text-3xl font-bold">
@@ -87,7 +88,7 @@
 			<a href="/" class=" text-black underline dark:text-green-500">Andrew Houser</a>
 		</div>
 		<div class="flex items-center justify-center space-x-4">
-			<div class="flex space-x-4">
+			<div class="flex space-x-6">
 				{#each pages as { name, route }}
 					<a
 						href={route}
@@ -95,7 +96,7 @@
 							page.url.pathname === route
 								? 'font-bold text-gray-800 underline dark:text-white'
 								: ' text-gray-700 hover:text-black dark:text-gray-200 dark:hover:text-gray-500'
-						} hover:animate-size-pulse text-xl `}
+						} hover:animate-size-pulse  text-xl`}
 					>
 						{name}
 					</a>

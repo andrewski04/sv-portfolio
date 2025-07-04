@@ -1,5 +1,6 @@
 {
     "css.customData": [".vscode/tailwind.json"],
+    "yaml.schemaStore.enable": false,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[svelte]": {
@@ -20,14 +21,11 @@
     "editor.quickSuggestions": {
         "strings": true
     },
-    "openctx.providers": {
-        "https://openctx.org/npm/@openctx/provider-devdocs": {
-        "urls": ["https://devdocs.io/svelte/", "https://devdocs.io/tailwindcss/", "https://devdocs.io/typescript/",]
-        },
-    },
+
     "workbench.editor.customLabels.patterns": {
         "**/src/**/*+*": "${dirname}  [${filename}.${extname}]"
     },
     "workbench.editor.customLabels.enabled": true,
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+
 }

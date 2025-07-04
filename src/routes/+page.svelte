@@ -1,7 +1,12 @@
-<div class="mx-auto flex max-w-5xl flex-col items-center justify-center p-8 md:flex-row">
+<svelte:head>
+	<title>About Me</title>
+	<meta name="description" content="About Andrew Houser" />
+</svelte:head>
+
+<div class="mx-auto flex max-w-7xl flex-col items-center justify-center p-8 md:flex-row">
 	<!-- Left Section: Text Content -->
 	<div class="p-4 text-center md:w-1/2 md:text-left">
-		<h1 class="mb-4 text-5xl font-bold text-gray-800 dark:text-white">Hi, I'm Andrew Houser</h1>
+		<h1 class="mb-6 text-5xl font-bold text-gray-800 dark:text-white">Hi, I'm Andrew Houser</h1>
 		<p class="mb-4 text-lg text-gray-700 dark:text-gray-300">
 			I'm a Computing student in the BlueSky TN Institute at ETSU. I have a passion for system
 			administration and programming, developing my skills through self-hosting home servers. I am
@@ -18,7 +23,6 @@
 		<div
 			class="relative flex aspect-video w-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-gray-300 shadow-lg dark:bg-gray-700"
 		>
-			<!-- Placeholder for play button SVG -->
 			<svg
 				class="absolute h-24 w-24 text-gray-500 dark:text-gray-400"
 				fill="currentColor"

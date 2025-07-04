@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+.dark #nprogress .bar {
+	background: oklch(72.3% 0.219 149.579) !important;
+}
+
 @theme {
 	--animate-size-pulse: size-pulse 4s ease-in-out infinite;
 	@keyframes size-pulse {
