@@ -19,7 +19,7 @@
 </script>
 
 <div
-	class="min-h-screen bg-neutral-200 transition-colors duration-300 dark:bg-neutral-950 dark:text-white"
+	class="min-h-screen bg-neutral-200 transition-colors duration-300 dark:bg-gray-800 dark:text-white"
 >
 	<NavBar />
 	{@render children()}

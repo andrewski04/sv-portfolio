@@ -1,17 +1,19 @@
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import type { Post } from '$lib/types';
+import { render } from 'svelte/server';
 
 export const load = (async ({ params }) => {
 	try {
-		const post = await import(/* @vite-ignore */ `/content/posts/${params.slug}.md`);
-		console.log(post.default);
+		const post = await import(`$lib/posts/${params.slug}.svx`);
+		const html = render(post.default, { props: {} }).body;
 
 		return {
-			content: post.default.render(),
-			metadata: post.metadata as Post
+			metadata: post.metadata as Post,
+			html
 		};
-	} catch {
+	} catch (e) {
+		console.log(e);
 		throw error(404, 'Post not found');
 	}
 }) satisfies PageServerLoad;

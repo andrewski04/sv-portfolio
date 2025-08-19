@@ -6,15 +6,17 @@
 </script>
 
 <svelte:head>
-	<title>Resume</title>
+	<title>Andrew Houser - Resume</title>
 	<meta name="description" content="Andrew Houser's Resume" />
 </svelte:head>
 
 <h1 class="pt-6 text-center text-4xl font-bold">{resume.title}</h1>
 
-<div class="flex flex-col items-center justify-center space-y-6 p-6">
+<div class="flex flex-col items-center justify-center space-y-6 p-4 md:p-6">
 	{#each resume.sections as section}
-		<div class=" w-full max-w-3xl rounded-lg bg-white p-8 shadow-lg dark:bg-neutral-800">
+		<div
+			class=" w-full max-w-3xl rounded-lg border border-gray-200 bg-white p-4 shadow-md md:p-8 dark:border-gray-600 dark:bg-gray-700"
+		>
 			<h2 class="mb-2 text-2xl font-semibold">{section.title}</h2>
 			<p class="mb-2 text-gray-600 dark:text-gray-300">
 				{section.subtitle}

@@ -1,0 +1,57 @@
+---
+title: This Website & Privacy
+description: How and why I made this website, and why I didn't want to.
+date: 'August 18, 2025'
+categories:
+  - Rant
+  - Privacy
+  - SvelteKit
+published: true
+---
+
+# Your Resume Shouldn't Be Public
+
+**Privacy, digital or not, is a fundamental human right.** In the U.S., it's been a Constitutional right since the Fourth Amendment was ratified in 1791, and
+expanded to cover digital privacy in 1939 when the Supreme Court ruled that wiretapping violated the amendment. This post is not about privacy being under attack; thankfully for governments and criminals alike, they have no need to attack it when 
+everything is public in the digital age.
+
+Information like your full name, phone number, email address, location, work history, education, age, and interests **should** be considered private,
+at least to the extent that you wouldn't want that information accessible to over **5.5 billion people**. Unfortunality, the reality we live in is that this is not
+only seen as normal, but as a professional standard. This is shown by the proliferation of LinkedIn; yes, there are privacy settings to hide information, 
+but you are actively encouraged to publish your entire professional career. 
+
+I understand the importance of this in recruiting, but this information being 
+completely public poses an active risk to both you personally and your company as a whole.
+According to PurpleSec, 98% of cyber attacks involved social enginering, with just phishing leading
+to **$1.8 billion in business losses**. Spear phishing is a targeted attack where the attacker
+gains as much information as possible, typically from public sources, to craft a highly realistic, deceptive
+phishing attack. According to StationX, **spear phishing only makes up 0.1% of attacks, but is responsible 
+for 66% of successful breaches.** 
+
+**When you don't practice internet privacy, you are an active vulnerability. The lack of care for personal privacy is actively costing both companies and individuals billions of dollars a year.**
+
+## So, Why Is Mine Public?
+
+For the same reason I have a LinkedIn account: It is a class requirement to graduate.
+Unfortunality, I have to give up one of my fundamental rights and core values to attain a career in what I am passionate about.
+
+# How I Made This Site
+
+Privacy rants aside, I am genuinely interested in having a personal website to share my projects and post information
+that could help others with similar interests out. Just expect a lot of the personally identifiable information to be gone 
+next year.
+
+
+My biggest goal with this site was speed and simplicity. Much of the internet is too "heavy" now; there is no reason that a 
+simple blog article should make 150+ network requests and use 15+ MB of bandwidth to load (looking at you Medium). 
+
+![My PageSpeed Insights](/images/blog/PageSpeed.png)
+
+To achieve this, I made this website from scratch using SvelteKit with static site generation. The final generated site 
+runs 100% on the client and is hosted from a simple static file server. Once generated, the only external dependency is nProgress
+for the fancy loading bar. The sites styling was primarily done with Tailwind CSS, with custom modifiers to the `prose` class to render
+markdown in the sites style.
+
+The sites pages and blog posts are dynamically rendered at build time from YAML and Markdown respectively. This allows me to 
+edit content without having to directly edit the page, giving me all the benefits of a frontend component framework while still
+having a lightweight, static site. 

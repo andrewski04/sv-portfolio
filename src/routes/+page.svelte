@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About Me</title>
+	<title>Andrew Houser - About Me</title>
 	<meta name="description" content="About Andrew Houser" />
 </svelte:head>
 
@@ -39,22 +39,25 @@
 <div class="flex justify-center space-x-6 p-8">
 	<!-- LinkedIn -->
 	<a
+		target="_blank"
 		href="https://www.linkedin.com/in/andrew-houser/"
-		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-200 shadow-md transition-transform hover:scale-105 dark:bg-gray-800"
+		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-300 shadow-md transition-transform hover:scale-105 dark:bg-gray-600"
 	>
 		<img src="/icons/linkedin.svg" alt="LinkedIn" class="h-10 w-10 dark:invert dark:filter" />
 	</a>
 	<!-- GitHub -->
 	<a
+		target="_blank"
 		href="https://github.com/andrewski04"
-		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-200 shadow-md transition-transform hover:scale-105 dark:bg-gray-800"
+		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-300 shadow-md transition-transform hover:scale-105 dark:bg-gray-600"
 	>
 		<img src="/icons/github.svg" alt="GitHub" class="h-8 w-8 dark:invert dark:filter" />
 	</a>
 	<!-- Email -->
 	<a
+		target="_blank"
 		href="mailto:andrew@andrew-houser.com"
-		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-200 shadow-md transition-transform hover:scale-105 dark:bg-gray-800"
+		class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-300 shadow-md transition-transform hover:scale-105 dark:bg-gray-600"
 	>
 		<img src="/icons/email.svg" alt="Email" class="h-8 w-8 dark:invert dark:filter" />
 	</a>

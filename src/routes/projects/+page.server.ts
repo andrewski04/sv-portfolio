@@ -1,9 +1,23 @@
 import type { PageServerLoad } from './$types';
-import { read } from '$app/server';
 import YAML from 'yaml';
+import projects from '$lib/pages/projects.yaml?raw';
 
+type projects = {
+	title: string;
+	sections: {
+		title: string;
+		subtitle: string;
+		list: {
+			title: string;
+			description: string[];
+		}[];
+		images: {
+			src: string;
+			alt: string;
+		}[];
+	}[];
+};
 export const load = (async () => {
-	const projects = await read('/content/pages/projects.yaml').text();
-	const projectsData = YAML.parse(projects);
+	const projectsData = YAML.parse(projects) as projects;
 	return { projects: projectsData };
 }) satisfies PageServerLoad;

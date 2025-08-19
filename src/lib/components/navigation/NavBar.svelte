@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
 	import nProgress from 'nprogress';
@@ -9,9 +9,9 @@
 		{ name: 'About Me', route: '/' },
 		{ name: 'Resume', route: '/resume' },
 		{ name: 'Projects', route: '/projects' },
-		{ name: 'My Vision', route: '/vision' },
-		{ name: 'Goals', route: '/goals' },
-		{ name: 'Blog', route: '/blog' }
+		//{ name: 'My Vision', route: '/vision' },
+		//{ name: 'Goals', route: '/goals' },
+		{ name: 'Posts', route: '/posts' }
 	];
 
 	if (browser) {
@@ -53,7 +53,7 @@
 </svelte:head>
 
 <nav
-	class="bg-white p-6 font-mono shadow-md transition-colors duration-300 dark:bg-black dark:text-white"
+	class="bg-white p-4 font-mono shadow-md transition-colors duration-300 dark:bg-gray-900 dark:text-white"
 >
 	<!-- Mobile Header (Title + Menu Button + Dark Mode Toggle) -->
 	<div class="flex items-center justify-between md:hidden">
