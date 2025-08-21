@@ -15,6 +15,10 @@ type projects = {
 			src: string;
 			alt: string;
 		}[];
+		link: {
+			title: string;
+			url: string;
+		}[];
 	}[];
 };
 export const load = (async () => {

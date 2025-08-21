@@ -18,6 +18,9 @@ sections:
         alt: Form Submissions
       - src: /images/projects/app-portal/editor.png
         alt: Form Editor
+    link:
+      - title: View on GitHub
+        url: https://github.com/andrewski04/BlueSky-Application-Portal
   - title: Manage a Home Server Cluster
     subtitle: Personal Project, 2022 - Current
     list:

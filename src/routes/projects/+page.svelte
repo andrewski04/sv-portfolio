@@ -37,6 +37,13 @@
 						{/each}
 					</ul>
 				{/each}
+				<div class="mt-4">
+					{#each section.link as link}
+						<a href={link.url} target="_blank" class=" text-blue-500 dark:text-green-500">
+							{link.title}
+						</a>
+					{/each}
+				</div>
 			</div>
 		</div>
 	{/each}
