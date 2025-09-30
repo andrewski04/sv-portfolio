@@ -12,6 +12,15 @@
 
 <h1 class="pt-6 text-center text-4xl font-bold">{resume.title}</h1>
 
+<div class="flex flex-col items-center justify-center pt-4">
+	<a
+		href="/assets/Andrew_Houser_Resume.pdf"
+		target="_blank"
+		class="rounded-md bg-blue-500 p-2 text-center text-white dark:bg-green-500"
+	>
+		View as PDF
+	</a>
+</div>
 <div class="flex flex-col items-center justify-center space-y-6 p-4 md:p-6">
 	{#each resume.sections as section}
 		<div

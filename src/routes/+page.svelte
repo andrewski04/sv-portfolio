@@ -12,31 +12,20 @@
 			administration and programming, developing my skills through self-hosting home servers. I am
 			an Intern at BlueCross BlueShield TN, currently working in Infrastructure and Operations.
 		</p>
-		<p class="text-lg text-gray-700 dark:text-gray-300">
-			Learn more about me and my experience at the BlueSky Institute by watching my video
-			reflection. (Coming soon...)
-		</p>
 	</div>
 
-	<!-- Right Section: Video Placeholder -->
-	<div class="flex items-center justify-center p-4 md:w-1/2">
-		<div
-			class="relative flex aspect-video w-full max-w-lg items-center justify-center overflow-hidden rounded-lg bg-gray-300 shadow-lg dark:bg-gray-700"
-		>
-			<svg
-				class="absolute h-24 w-24 text-gray-500 dark:text-gray-400"
-				fill="currentColor"
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M8 5v14l11-7z" />
-			</svg>
-		</div>
+	<!-- Right Section: Headshot Image -->
+	<div class="flex items-center justify-center md:w-1/3">
+		<img
+			src="/images/Andrew-Headshot.jpeg"
+			alt="Andrew Houser headshot"
+			class="h-auto w-full max-w-xs rounded-lg object-cover shadow-lg"
+		/>
 	</div>
 </div>
 
 <!-- Social Media SVGs -->
-<div class="flex justify-center space-x-6 p-8">
+<div class="flex justify-center space-x-6 p-4">
 	<!-- LinkedIn -->
 	<a
 		target="_blank"
@@ -61,4 +50,24 @@
 	>
 		<img src="/icons/email.svg" alt="Email" class="h-8 w-8 dark:invert dark:filter" />
 	</a>
+</div>
+
+<!-- Video Placeholder moved under main text -->
+<div class="mx-auto flex max-w-3xl flex-col items-center justify-center gap-3 p-8 text-center">
+	<div
+		class="relative flex aspect-video w-full max-w-2xl items-center justify-center overflow-hidden rounded-lg bg-gray-300 shadow-lg dark:bg-gray-700"
+	>
+		<svg
+			class="absolute h-24 w-24 text-gray-500 dark:text-gray-400"
+			fill="currentColor"
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path d="M8 5v14l11-7z" />
+		</svg>
+	</div>
+	<p class="text-lg text-gray-700 dark:text-gray-300">
+		Learn more about me and my experience at the BlueSky Institute by watching my video reflection.
+		(Coming soon...)
+	</p>
 </div>
