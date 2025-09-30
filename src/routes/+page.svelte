@@ -1,4 +1,11 @@
 <svelte:head>
+	<link
+		rel="preload"
+		as="image"
+		href="/images/Andrew-Headshot-600.webp"
+		imagesrcset="/images/Andrew-Headshot-600.webp 600w"
+		imagesizes="(min-width: 768px) 33vw, 100vw"
+	/>
 	<title>Andrew Houser - About Me</title>
 	<meta name="description" content="About Andrew Houser" />
 </svelte:head>
@@ -17,8 +24,15 @@
 	<!-- Right Section: Headshot Image -->
 	<div class="flex items-center justify-center md:w-1/3">
 		<img
-			src="/images/Andrew-Headshot.webp"
+			src="/images/Andrew-Headshot-600.webp"
+			srcset="/images/Andrew-Headshot-600.webp 600w"
+			sizes="(min-width: 768px) 33vw, 100vw"
 			alt="Andrew Houser headshot"
+			width="600"
+			height="600"
+			decoding="async"
+			fetchpriority="high"
+			loading="eager"
 			class="h-auto w-full max-w-xs rounded-lg object-cover shadow-lg"
 		/>
 	</div>

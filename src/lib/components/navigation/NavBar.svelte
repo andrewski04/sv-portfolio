@@ -9,8 +9,8 @@
 		{ name: 'About Me', route: '/' },
 		{ name: 'Resume', route: '/resume' },
 		{ name: 'Projects', route: '/projects' },
-		//{ name: 'My Vision', route: '/vision' },
-		//{ name: 'Goals', route: '/goals' },
+		{ name: 'Internship', route: '/internship' },
+		{ name: 'Goals & Vision', route: '/vision' },
 		{ name: 'Posts', route: '/posts' }
 	];
 
@@ -50,6 +50,13 @@
 			? document.documentElement.classList.add('dark')
 			: document.documentElement.classList.remove('dark');
 	</script>
+	<style>
+		nav {
+			position: sticky;
+			top: 0;
+			z-index: 50;
+		}
+	</style>
 </svelte:head>
 
 <nav
@@ -138,11 +145,3 @@
 		</div>
 	{/if}
 </nav>
-
-<style>
-	nav {
-		position: sticky;
-		top: 0;
-		z-index: 50;
-	}
-</style>

@@ -1,0 +1,27 @@
+title: Internship Experience
+
+sections:
+  - title: Rotation 1 - Managed File Transfer
+    subtitle: BCBST Infrastructure and Operations, January 2025 - May 2025
+    list:
+      - title: Work Details
+        description:
+          - Worked with IBM Sterling and OPTx to manage third party file transfer accounts.
+          - Fulfilled tickets to handle secure file transfers both internally and with external partners.
+          - Worked with Windows Server and FTP command line for manual file transfers.
+  - title: Rotation 2 - x86 Server Management
+    subtitle: BCBST Infrastructure and Operations, May 2025 - September 2025
+    list:
+      - title: Work Details
+        description:
+          - Handles asset management for hardware in the data center and virtual machines.
+          - Worked with VMWare and Nutanix to manage virtual machines and containers.
+          - Wrote scripts (Python) for automated asset management and reporting.
+  - title: Rotation 3 - Interoperability Systems
+    subtitle: BCBST Enterprise Technology Solutions, September 2025 - December 2025
+    list:
+      - title: Work Details
+        description:
+          - Working with Spring Boot and MSSQL with internal FHIR implementation.
+          - Building full-stack internal tool for testing FHIR endpoints.
+          - Working within both existing code base and new code base for the project.
