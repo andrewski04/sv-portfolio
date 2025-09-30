@@ -17,7 +17,7 @@
 	<!-- Right Section: Headshot Image -->
 	<div class="flex items-center justify-center md:w-1/3">
 		<img
-			src="/images/Andrew-Headshot.jpeg"
+			src="/images/Andrew-Headshot.webp"
 			alt="Andrew Houser headshot"
 			class="h-auto w-full max-w-xs rounded-lg object-cover shadow-lg"
 		/>
