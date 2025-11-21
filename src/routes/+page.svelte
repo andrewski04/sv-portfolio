@@ -68,20 +68,17 @@
 
 <!-- Video Placeholder moved under main text -->
 <div class="mx-auto flex max-w-3xl flex-col items-center justify-center gap-3 p-8 text-center">
-	<div
-		class="relative flex aspect-video w-full max-w-2xl items-center justify-center overflow-hidden rounded-lg bg-gray-300 shadow-lg dark:bg-gray-700"
-	>
-		<svg
-			class="absolute h-24 w-24 text-gray-500 dark:text-gray-400"
-			fill="currentColor"
-			viewBox="0 0 24 24"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path d="M8 5v14l11-7z" />
-		</svg>
-	</div>
+	<iframe
+		width="560"
+		height="315"
+		src="https://www.youtube-nocookie.com/embed/XwcB6mfVyAg?si=iV7e5HqjvJZ8L4Fe"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		referrerpolicy="strict-origin-when-cross-origin"
+		allowfullscreen
+	></iframe>
 	<p class="text-lg text-gray-700 dark:text-gray-300">
 		Learn more about me and my experience at the BlueSky Institute by watching my video reflection.
-		(Coming soon...)
 	</p>
 </div>
