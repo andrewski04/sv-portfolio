@@ -7,6 +7,7 @@ type internship = {
 	sections: {
 		title: string;
 		subtitle: string;
+		writeup?: string;
 		list: {
 			title: string;
 			description: string[];

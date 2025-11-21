@@ -31,6 +31,18 @@
 					{/each}
 				</ul>
 			{/each}
+			{#if section.writeup}
+				<div class="mt-4">
+					<a
+						href={section.writeup}
+						target="_blank"
+						rel="noopener noreferrer"
+						class=" text-blue-500 dark:text-green-500"
+					>
+						View Full Writeup
+					</a>
+				</div>
+			{/if}
 		</div>
 	{/each}
 </div>
